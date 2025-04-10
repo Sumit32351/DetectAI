@@ -35,12 +35,11 @@
 
     "content_scripts" : [
         {
-            "matches" : ["<all_urls>"],
+            "matches" : ["*://stackoverflow.com/*"],
             "js" : ["content.js"]
         }
     ],
     "host_permissions" : [
-        "<all_urls>"
+        "*://stackoverflow.com/*"
     ]
-
 }
