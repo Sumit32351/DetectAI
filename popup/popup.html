@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Detect AI</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="scan-line"></div>
+  
+  <div class="popup-container">
+    <div class="header">
+      <img src="img.png" alt="Detect AI Logo" class="logo">
+    </div>
+
+    <h1>Detect AI (StackOverflow)</h1>
+    <p>Analyze this page for AI-generated content with a single click.</p>
+    <div class="button-container">
+      <button id="analyzeBtn">Analyze</button>
+    </div>
+
+    <div class="section">
+      <h2>Detection Results</h2>
+      <p>Current session statistics:</p>
+      <ul class="stats">
+        <li><span>1.2k</span> pages scanned</li>
+        <li><span>24</span> suspected AI</li>
+        <li><span>15</span> flagged</li>
+        <li><span>92%</span> detection accuracy rate</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
+
