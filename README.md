@@ -11,11 +11,9 @@ It uses CodeBERT in the background to predict AI generated code.
 
 ## From browser
 
-1. Go to your google chrome browser and paste the following address :  [Link Text](https://github.com/harsh-g1/DetectAI```)
+1. Download the zip folder from the CODE button on top right side.
 
-2. Download the zip folder from the CODE button on top right side.
-
-3. Unzip the folder.
+2. Unzip the folder.
 
 ## Using github on command line
 
@@ -28,28 +26,25 @@ It uses CodeBERT in the background to predict AI generated code.
 
 # HOW TO USE 
 
-### ACTIVATING THE LOCALHOST
+### ACTIVATING THE LOCALHOST (macOS)
 
 1. Go to the terminal and add the path where the folder is downloaded. 
 
 2. Dowload the dependencies with
 ```bash
-    cd backend
     pip install -r requirements.txt
 ```
-3. Run this once to download and save the model
+3. Run this command to download and save the model
 ```bash
     mkdir -p models/codebert
-    python3 -c "
-    from transformers import AutoModelForSequenceClassification, AutoTokenizer
-    model = AutoModelForSequenceClassification.from_pretrained('microsoft/codebert-base')
-    tokenizer = AutoTokenizer.from_pretrained('microsoft/codebert-base')
-    model.save_pretrained('./models/codebert')
-    tokenizer.save_pretrained('./models/codebert')
-    "
+python3 -c "from transformers import AutoModelForSequenceClassification, AutoTokenizer; model = AutoModelForSequenceClassification.from_pretrained('microsoft/codebert-base'); tokenizer = AutoTokenizer.from_pretrained('microsoft/codebert-base'); model.save_pretrained('./models/codebert'); tokenizer.save_pretrained('./models/codebert')"
+
 ```
 
 4. Activate the model with 
+```bash
+    cd backend
+```
 ```bash
     python3 app.py
 ```
