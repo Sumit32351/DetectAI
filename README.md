@@ -34,10 +34,8 @@ It uses CodeBERT in the background to predict AI generated code.
 ```bash
     pip install -r requirements.txt
 ```
-3. Run this command to download and save the model
+3. You have to create a new folder named 'models'. Then go to models directory in cmd and run the following command :
 ```bash
-You have to create a new folder named 'models'
-Then go to models directory in cmd and run the following command :
 git clone https://huggingface.co/microsoft/codebert-base
 ```
 
