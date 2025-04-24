@@ -36,9 +36,9 @@ It uses CodeBERT in the background to predict AI generated code.
 ```
 3. Run this command to download and save the model
 ```bash
-    mkdir -p models/codebert
-python3 -c "from transformers import AutoModelForSequenceClassification, AutoTokenizer; model = AutoModelForSequenceClassification.from_pretrained('microsoft/codebert-base'); tokenizer = AutoTokenizer.from_pretrained('microsoft/codebert-base'); model.save_pretrained('./models/codebert'); tokenizer.save_pretrained('./models/codebert')"
-
+You have to create a new folder named 'models'
+Then go to models directory in cmd and run the following command :
+git clone https://huggingface.co/microsoft/codebert-base
 ```
 
 4. Activate the model with 
