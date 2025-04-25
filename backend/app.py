@@ -8,15 +8,15 @@ from threading import Lock
 warnings.filterwarnings("ignore")
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for all routes
+CORS(app)  
 
-# === Globals ===
+
 model = None
 tokenizer = None
 model_lock = Lock()
 MODEL_PATH = "../models/codebert"  # Update if needed     # yaha model path change kiya hai kyuki model is not stored in backend directory
 
-# === Load model (thread-safe) ===
+
 def load_model():
     global model, tokenizer
     with model_lock:
