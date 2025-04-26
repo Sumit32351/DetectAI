@@ -27,7 +27,7 @@ It uses CodeBERT in the background to predict AI generated code.
 
 # HOW TO USE 
 
-### ACTIVATING THE LOCALHOST (macOS)
+### ACTIVATING THE LOCALHOST
 
 1. Go to the terminal and add the path where the folder is downloaded. 
 
