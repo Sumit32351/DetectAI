@@ -41,7 +41,7 @@ It uses CodeBERT in the background to predict AI generated code.
     cd backend
 ```
 ```bash
-    python3 app.py
+    python app.py
 ```
    This activates the flask server. Now the model is ready to receive requests.
 
