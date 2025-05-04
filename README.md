@@ -30,7 +30,7 @@ It uses CodeBERT in the background to predict AI generated code.
 python -c "import os; os.makedirs('models/codebert-base', exist_ok=True); from transformers import AutoModel, AutoTokenizer; AutoModel.from_pretrained('microsoft/codebert-base', local_files_only=False, force_download=True, cache_dir=None).save_pretrained('models/codebert-base'); AutoTokenizer.from_pretrained('microsoft/codebert-base', local_files_only=False, force_download=True, cache_dir=None).save_pretrained('models/codebert-base')"
 
 ```
-3. This creates the model
+3. This creates the models/codebert-base directory and saves the model inside it.
 
 
 # HOW TO USE 
