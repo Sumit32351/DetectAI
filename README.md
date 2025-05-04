@@ -22,16 +22,6 @@ It uses CodeBERT in the background to predict AI generated code.
 ```bash
     git clone https://github.com/harsh-g1/DetectAI
 ```
-## Installing the model (Very Important)
-1. Go to DetectAI/backend directory in terminal.
-
-2. Type the command
-```bash
-python -c "import os; os.makedirs('models/codebert-base', exist_ok=True); from transformers import AutoModel, AutoTokenizer; AutoModel.from_pretrained('microsoft/codebert-base', local_files_only=False, force_download=True, cache_dir=None).save_pretrained('models/codebert-base'); AutoTokenizer.from_pretrained('microsoft/codebert-base', local_files_only=False, force_download=True, cache_dir=None).save_pretrained('models/codebert-base')"
-
-```
-3. This creates the models/codebert-base directory and saves the model inside it.
-
 
 # HOW TO USE 
 
@@ -44,7 +34,12 @@ python -c "import os; os.makedirs('models/codebert-base', exist_ok=True); from t
     pip install -r requirements.txt
 ```
 
-3. Activate the model with 
+3. Go to DetectAI/backend and type the following command in terminal
+```bash
+    python -c "import os; os.makedirs('models/codebert-base', exist_ok=True); from transformers import AutoModel, AutoTokenizer; AutoModel.from_pretrained('microsoft/codebert-base', local_files_only=False, force_download=True, cache_dir=None).save_pretrained('models/codebert-base'); AutoTokenizer.from_pretrained('microsoft/codebert-base', local_files_only=False, force_download=True, cache_dir=None).save_pretrained('models/codebert-base')"
+```
+
+4. Activate the model with 
 ```bash
     cd backend
 ```
